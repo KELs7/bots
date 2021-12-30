@@ -54,6 +54,7 @@ def update():
           last_24burn = burned - current_24burn
           last_24time = current_24time
           rswpPriceUsd24 = '%.2f'%(last_24burn * rswpPrice * tauPriceUsd)
+          current_24burn = burned
           count = 0
 
           text24 = f"🔥*BURNED*🔥 `{'%.4f'%(last_24burn)}` `RSWP` *($~{rswpPriceUsd24})* _in 24hrs_ UTC⏱"
